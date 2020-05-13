@@ -1,0 +1,249 @@
+.support-wrapper {
+  background-color: $lightGrey;
+  padding: 40px 0 80px 0;
+}
+
+.support {
+  h1 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B", "Calibri", "Arial Narrow",
+      sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.04px;
+    font-size: 50px;
+    line-height: 44px;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B", "Calibri", "Arial Narrow",
+        sans-serif;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  h2 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 20px;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+}
+
+.support-header {
+  padding-bottom: 66px;
+  font-size: 14px;
+}
+
+.support-card {
+  background-color: white;
+  border-radius: 40px;
+  padding: 80px 95px;
+  font-size: 20px;
+  box-shadow: 0 10px 13px 0 rgba(81, 48, 125, 0.1);
+  p {
+    font-size: 14px;
+    margin-bottom: 24px;
+    &:first-of-type {
+      padding-top: 10px;
+    }
+  }
+  a {
+    color: $secondaryGreen;
+    transition: 0.4s all;
+    &:hover {
+      text-decoration: none;
+      color: $darkGreen;
+      transition: 0.4s all;
+    }
+  }
+
+  .enroll-btn-wrapper {
+    padding-top: 40px;
+  }
+
+  .enroll-btn {
+    padding: 13px;
+    background: $secondaryGreen;
+    border-radius: 4px;
+    color: white;
+    width: 156px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    &:hover {
+      color: white;
+      background: $darkGreen;
+    }
+  }
+  .rems-link {
+    display: block;
+    width: 335px;
+    height: 50px;
+    padding: 13px 0;
+    color: white;
+    background-color: $secondaryGreen;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    transition: 0.4s all;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background: $darkGreen;
+      transition: 0.4s all;
+    }
+  }
+}
+
+.section-border {
+  border-bottom: 2px solid #d8d8d8;
+  padding-top: 30px;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+  padding-top: 60px;
+}
+
+.section-1 {
+  p {
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+.section-3 {
+  .header {
+    p {
+      &:first-of-type {
+        padding-top: 10px;
+      }
+    }
+  }
+  p {
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+}
+
+.bullet {
+  padding-right: 8px;
+  img {
+    vertical-align: top;
+    position: relative;
+    top: 4px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .bullet {
+    padding-right: 8px;
+    img {
+      vertical-align: top;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
+
+.phone-block {
+  padding-left: 8px;
+}
+
+.footnote {
+  padding-top: 40px;
+  p {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #96939a;
+  }
+}
+
+#starting-palforzia {
+  position: relative;
+  top: -100px;
+}
+
+.pb-0 {
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.support-cta {
+  background-color: $lightGrey;
+  padding-bottom: 80px;
+  .btn-wrapper {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .support-wrapper {
+    padding: 40px 0;
+  }
+
+  .support {
+    h1 {
+      padding-bottom: 40px;
+      font-size: 40px;
+      line-height: 38px;
+      strong {
+        display: block;
+      }
+    }
+  }
+
+  .support-header {
+    padding-bottom: 30px;
+  }
+
+  .support-card {
+    padding: 40px 20px;
+    &.row {
+      margin: 0;
+    }
+    .icons {
+      width: 120px;
+      padding-bottom: 20px;
+    }
+    .rems-link {
+      width: 100%;
+      height: 50px;
+    }
+  }
+
+  .section-border {
+    padding-top: 10px;
+  }
+
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    padding-top: 40px;
+  }
+
+  .phone-block {
+    padding-left: 15px;
+  }
+}

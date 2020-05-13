@@ -1,0 +1,269 @@
+.signup-wrapper {
+  background-color: #ffffff;
+}
+
+.signup {
+  padding: 80px 0;
+  h1 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 54 A", "Knockout 54 B", "Calibri", "Arial Narrow",
+      sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    span {
+      font-family: "Knockout 28 A", "Knockout 28 B", "Calibri", "Arial Narrow",
+        sans-serif;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  a {
+    color: $secondaryGreen;
+    transition: 0.4s all;
+    &:hover {
+      text-decoration: none;
+      color: $secondaryGreen;
+      transition: 0.4s all;
+    }
+  }
+  .thank-you {
+    padding-top: 60px;
+  }
+  .home-indication-copy {
+    padding-top: 24px;
+  }
+}
+
+.form-component {
+  .form-header {
+    font-size: 14px;
+    padding: 0 0 20px 0;
+  }
+  .input-field {
+    position: relative;
+  }
+
+  label {
+    position: absolute;
+    top: 22px;
+    left: 33px;
+    color: black;
+    transition: 0.2s all;
+    text-transform: uppercase;
+  }
+
+  input {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid $secondaryGreen;
+    &.invalid {
+      border: 2px solid $errorRed;
+      margin-bottom: 0;
+    }
+  }
+
+  input:invalid {
+    outline: 0;
+  }
+
+  input:focus,
+  input:valid {
+    border-color: $secondaryGreen;
+  }
+
+  input:focus ~ label,
+  input:valid ~ label {
+    font-size: 12px;
+    top: 2px;
+    left: 28px;
+    color: black;
+  }
+
+  .row {
+    &:nth-of-type(4) {
+      margin-top: 30px;
+    }
+  }
+  .radio {
+    &.col {
+      padding: 0;
+      &:first-child {
+        padding-left: 15px;
+      }
+      &:last-child {
+        padding-right: 15px;
+      }
+    }
+    input {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+      position: initial;
+      transition: 0.4s all;
+      &:hover {
+        background: $secondaryGreen;
+        color: #ffffff;
+        transition: 0.4s all;
+      }
+    }
+    input + label {
+      border: 2px solid $secondaryGreen;
+      padding: 20px 5px;
+      font-size: 16px;
+      color: black;
+      width: 100%;
+      background-color: white;
+    }
+    input:checked + label {
+      background-color: $secondaryGreen;
+      border: 2px solid $secondaryGreen;
+      color: white;
+    }
+    .first-label {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      margin: 0;
+    }
+    .middle-label {
+      border-left: none;
+      border-right: none;
+      margin: 0;
+    }
+    .last-label {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      margin: 0;
+    }
+  }
+
+  .required-field {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+
+  .terms {
+    padding-top: 20px;
+    font-size: 10px;
+    a {
+      transition: 0.4s all;
+      &:hover {
+        color: $darkGreen;
+        cursor: pointer;
+        transition: 0.4s all;
+      }
+    }
+    .checkbox-wrapper {
+      display: flex;
+      .terms-text {
+        margin-left: 30px;
+      }
+    }
+    .checkbox {
+      input {
+        display: none;
+      }
+      input:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+    .checkmark {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      height: 20px;
+      width: 20px;
+      border: 2px solid $secondaryGreen;
+      background-color: white;
+      border-radius: 4px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 6px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid $secondaryGreen;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+      &.invalid {
+        border: 2px solid $errorRed;
+      }
+    }
+  }
+
+  .signup-btn {
+    background: $secondaryGreen;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.4s all;
+    padding: 10px 0;
+    font-size: 14px;
+    &:valid {
+      border-color: $secondaryGreen;
+    }
+    &:hover {
+      cursor: pointer;
+      background: $darkGreen;
+      transition: 0.4s all;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    &.invalid {
+      color: $errorRed;
+      font-size: 13px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .field-text {
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .signup {
+    h1 {
+      padding-bottom: 30px;
+    }
+  }
+
+  .form-component {
+    p {
+      padding: 0;
+      &.form-header {
+        padding-bottom: 20px;
+      }
+      &.invalid {
+        padding-bottom: 20px;
+      }
+    }
+    .row {
+      &:nth-of-type(4) {
+        margin-top: 24px;
+      }
+    }
+    .signup-btn {
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+
+    .field-text {
+      height: auto;
+    }
+  }
+}

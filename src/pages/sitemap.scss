@@ -1,0 +1,30 @@
+.sitemap {
+    padding: 40px 0;
+  h1 {
+    text-transform: uppercase;
+    color: $blue;
+    font-family: "Knockout 54 A", "Knockout 54 B";
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 36px;
+  }
+  ul {
+    color: $blue;
+    li {
+      padding-bottom: 10px;
+      a {
+        color: $secondaryGreen;
+        &:hover {
+          text-decoration: none;
+          border-bottom: 2px solid $secondaryGreen;
+        }
+        &:not([href]) {
+          &:not([tabindex]) {
+            color: $secondaryGreen;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

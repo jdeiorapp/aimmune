@@ -1,0 +1,76 @@
+.contactus {
+  background-color: #f8f7fa;
+  padding: 40px 0;
+
+  h1 {
+    font-family: "Knockout 28 A", "Knockout 28 B", "Calibri", "Arial Narrow",
+      sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    @media screen and (max-width: 425px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B", "Calibri", "Arial Narrow",
+        sans-serif;
+      font-style: normal;
+      font-weight: 400;
+    }
+    text-transform: uppercase;
+    color: $blue;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  img {
+    padding: 40px 0;
+    @media screen and (max-width: 768px) {
+      padding-top: 24px;
+    }
+  }
+
+  a {
+    color: $secondaryGreen;
+    transition: 0.4s all;
+    font-weight: 600;
+    &:hover {
+      text-decoration: none;
+      color: $darkGreen;
+      transition: 0.4s all;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 24px;
+    margin-bottom: 40px;
+    li {
+      padding-left: 24px;
+      &:not(:last-of-type) {
+        padding-bottom: 8px;
+      }
+    }
+    p::before {
+      color: $blue;
+      content: "\2022";
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}

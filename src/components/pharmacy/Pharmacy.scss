@@ -1,0 +1,91 @@
+.pharmacy-wrapper {
+  background-color: #f8f7fa;
+  padding-bottom: 80px;
+}
+
+.pharmacy-header {
+  padding-bottom: 60px;
+  font-size: 14px;
+  h1 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B", "Calibri", "Arial Narrow",
+      sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 44px;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B", "Calibri", "Arial Narrow",
+        sans-serif;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+}
+
+.pharmacy-card {
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 10px 13px 0 rgba(81, 48, 125, 0.1);
+  .number {
+    position: relative;
+    margin: auto;
+    width: 55px;
+    height: 55px;
+    top: -72px;
+    border: 1px solid#eeeeef;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 36px;
+    color: $blue;
+    font-family: "Knockout 28 A", "Knockout 28 B", "Calibri", "Arial Narrow",
+      sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .section {
+    padding: 44px 30px;
+    &:not(:last-of-type) {
+      border-right: 1px solid #eeeeef;
+    }
+    p {
+      padding-top: 30px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pharmacy-wrapper {
+    padding-bottom: 40px;
+  }
+
+  .pharmacy-header {
+    h1 {
+      padding-bottom: 40px;
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+
+  .pharmacy-card {
+    &.row {
+      margin: 0;
+    }
+    .number {
+      top: -28px;
+    }
+    .section {
+      padding: 0 24px 30px 24px;
+      &:not(:last-of-type) {
+        border-right: none;
+        border-bottom: 1px solid #eeeeef;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

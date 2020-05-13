@@ -1,0 +1,36 @@
+.ourvision {
+  padding: 14px 0 80px 0;
+  background-color: $lightGrey;
+  .header {
+    padding-top: 40px;
+    @media screen and (max-width: 992px) {
+      padding-bottom: 80px;
+    }
+  }
+  h1 {
+    color: $blue;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  p {
+    font-size: 14px;
+    &:first-of-type {
+      padding-top: 34px;
+    }
+    &:last-of-type {
+      padding-bottom: 40px;
+    }
+  }
+  .btn-wrapper {
+    a {
+      margin: 0;
+      padding: 19px 0;
+    }
+  }
+}

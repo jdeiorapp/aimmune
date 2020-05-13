@@ -1,0 +1,288 @@
+.whatitis {
+  padding-bottom: 80px;
+  background-color: $lightGrey;
+  h1 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  h5 {
+    padding-bottom: 10px;
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    b {
+      color: $blue;
+    }
+  }
+  .btn-wrapper {
+    padding-top: 40px;
+    a {
+      margin: 0;
+    }
+  }
+
+  .clinical-trial {
+    padding-top: 40px;
+    padding-bottom: 58px;
+  }
+
+  em {
+    font-size: 12px;
+    line-height: 16px;
+    color: #5b565f;
+  }
+
+  .pt-40 {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .chart {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.dosing-chart {
+  h1 {
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    color: white;
+    @media screen and (max-width: 992px) {
+      padding-bottom: 0;
+    }
+  }
+  img {
+    padding: 30px 0 20px 0;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  #animate_chart {
+    width: 1440px;
+    height: 425px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #4f5dbf;
+
+    .animate_chart_content {
+      position: absolute;
+    }
+
+    #box1 {
+      width: 10px;
+      height: 250px;
+      left: 0px;
+      top: 0px;
+      background-color: #d7daef;
+    }
+
+    #box2 {
+      width: 241px;
+      height: 250px;
+      left: 10px;
+      top: 0px;
+      background-color: #bec3e6;
+    }
+
+    #box3 {
+      width: 578px;
+      height: 250px;
+      left: 251px;
+      top: 0px;
+      background-color: #7781cc;
+    }
+
+    #box_container {
+      border-radius: 40px 40px 0px 0px;
+      width: 829px;
+      height: 280px;
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    #white_bar {
+      width: 829px;
+      height: 30px;
+      left: 0px;
+      top: 250px;
+      background-color: #fff;
+      transform-origin: left;
+    }
+
+    #progress_bar {
+      width: 1px;
+      height: 30px;
+      left: 0px;
+      top: 250px;
+      background-color: #49c5b1;
+      transform-origin: left;
+      opacity: 0;
+    }
+
+    #peanut_protein {
+      left: 364px;
+      top: 228px;
+      z-index: 1;
+    }
+
+    #fivemg {
+      left: 4px;
+      top: 82px;
+      opacity: 0.2;
+    }
+
+    #onetwentyfivemg {
+      left: 96px;
+      top: 82px;
+      opacity: 0.2;
+    }
+
+    #threehundredmg {
+      left: 401px;
+      top: 82px;
+      opacity: 0.2;
+      @media screen and (max-width: 992px) {
+        left: 340px;
+      }
+    }
+
+    .body_copy {
+      top: 300px;
+      left: 50%;
+      margin-left: -306px;
+      opacity: 0;
+      width: 612px;
+    }
+  }
+
+  .carousel-inner {
+    padding-bottom: 75px;
+  }
+
+  .carousel-item {
+    img {
+      width: 100%;
+    }
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .carousel-control-prev {
+    height: 42px;
+    top: auto;
+    left: 100px;
+  }
+
+  .carousel-control-next {
+    height: 42px;
+    top: auto;
+    right: 100px;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("../assets/images/prev_button.svg");
+    width: 42px;
+    height: 42px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("../assets/images/next_button.svg");
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.benefits-wrapper {
+  padding-top: 58px;
+  h1 {
+    text-transform: uppercase;
+    color: $blue;
+    padding-bottom: 60px;
+  }
+  h2 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  .benefits {
+    .row {
+      padding-bottom: 60px;
+    }
+    h5 {
+      p {
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 0;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .btn-wrapper {
+    a {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whatitis {
+    padding-bottom: 60px;
+    h1 {
+      p {
+        font-size: 40px;
+        line-height: 38px;
+      }
+    }
+    .page-header {
+      padding-bottom: 40px;
+    }
+  }
+
+  .benefits-wrapper {
+    h1 {
+      padding-bottom: 30px;
+    }
+    .benefits {
+      .row {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

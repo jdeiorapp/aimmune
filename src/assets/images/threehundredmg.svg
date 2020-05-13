@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="196px" height="79px" viewBox="0 0 196 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>300</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dosing_chart-/-summary" transform="translate(-755.000000, -283.000000)">
+            <g id="dose-escalation-copy-4">
+                <g id="chart-1" transform="translate(305.000000, 200.000000)">
+                    <g id="300" transform="translate(450.000000, 72.000000)">
+                        <text id="Maintenance-Dose-of" font-family="Knockout-28JuniorFeathrwt, Knockout" font-size="17.9999995" font-weight="normal" line-spacing="19.7999995" letter-spacing="0.449999988" fill="#FFFFFF">
+                            <tspan x="0" y="69"> MAINTENANCE DOSE OF TREATMENT </tspan>
+                            <tspan x="52.9379986" y="88.7999995">WITH PALFORZIA</tspan>
+                        </text>
+                        <g id="icon-/-fda" transform="translate(0.000000, 11.000000)">
+                            <g id="Group-10">
+                                <circle id="Oval-Copy-9" fill="#FFFFFF" cx="19" cy="19" r="19"></circle>
+                                <path d="M26.920822,17.2588585 L22.6527732,21.5315415 L16.030578,14.9093463 L20.2986268,10.6412976 C22.1291146,8.81080976 25.0903341,8.81080976 26.920822,10.6412976 C28.7466756,12.4671512 28.7466756,15.4283707 26.920822,17.2588585" id="Fill-1" fill="#EAA7C7"></path>
+                                <path d="M21.9947707,22.1894049 L17.7220878,26.4574537 C15.8962341,28.2833073 12.9350146,28.2833073 11.1045268,26.4574537 C9.27403902,24.6269659 9.27403902,21.6611122 11.1045268,19.8352585 L15.3725756,15.5672098 L21.9947707,22.1894049 Z" id="Fill-4" fill="#4F5DBF"></path>
+                            </g>
+                        </g>
+                        <text font-family="Knockout-54Sumo, Knockout" font-size="46.7999988" font-weight="normal" letter-spacing="-3.5999999" fill="#FFFFFF">
+                            <tspan x="45.1808014" y="45">300</tspan>
+                        </text>
+                        <text id="mg" font-family="Knockout-28JuniorFeathrwt, Knockout" font-size="30" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="156.345" y="41.8999995">mg</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

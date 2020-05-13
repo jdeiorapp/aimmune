@@ -1,0 +1,58 @@
+.outer-caregiver-card-container {
+  padding: 80px 0 0 0;
+  .caregiver-card {
+    background-color: white;
+    border-radius: 40px;
+    padding: 80px 95px;
+    font-size: 20px;
+    box-shadow: 0 10px 13px 0 rgba(81, 48, 125, 0.1);
+    border: 2px solid #F8F7FA;
+    p {
+      font-size: 14px;
+      margin-bottom: 24px;
+      &:first-of-type {
+        padding-top: 10px;
+      }
+    }
+    .download-guide-link {
+      display: block;
+      width: 335px;
+      height: 50px;
+      padding: 13px 0;
+      color: white;
+      background-color: $secondaryGreen;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 700;
+      transition: 0.4s all;
+      &:hover {
+        text-decoration: none;
+        color: white;
+        background: $darkGreen;
+        transition: 0.4s all;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .outer-caregiver-card-container {
+    padding: 40px 0;
+    .caregiver-card {
+      padding: 40px 20px;
+      &.row {
+        margin: 0;
+      }
+      .icons {
+        width: 120px;
+        padding-bottom: 20px;
+      }
+      .download-guide-link {
+        width: 100%;
+        height: 50px;
+      }
+    }
+  }
+}

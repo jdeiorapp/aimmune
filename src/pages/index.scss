@@ -1,0 +1,204 @@
+// Primary colors
+$purple: #51307d;
+$blue: #4f5dbf;
+$lightBlue: #4c7ed9;
+$blurple: #727dcc;
+$secondaryGreen: #49c5b1;
+$darkGreen: #43b4a1;
+$primaryGradient: #4f5dbf;
+$errorRed: #b12537;
+$lightGrey: #f8f7fa;
+
+// Other
+
+@import "../components/header/Header.scss";
+@import "../components/header/Indication.scss";
+@import "../components/header/MainNav.scss";
+@import "../components/home/Home.scss";
+@import "../components/form/SignUpForm.scss";
+@import "../components/support/Support.scss";
+@import "../components/pharmacy/Pharmacy.scss";
+@import "../components/caregiver/CaregiverCard.scss";
+@import "../components/treatment/Treatment.scss";
+@import "../components/whatitis/WhatItIs.scss";
+@import "../components/faqs/Faqs.scss";
+@import "../components/isi/Isi.scss";
+@import "../components/footer/Footer.scss";
+@import "../components/Layout.scss";
+@import "./quiz.scss";
+@import "./ourvision.scss";
+@import "./contactus.scss";
+@import "./sitemap.scss";
+@import "~bootstrap/scss/bootstrap";
+
+html {
+  // UI/UX use multiples of 8px
+  // https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97
+  // Since browser default is 16px, the following will set the root font size to 8px
+  // It should be set this way to avoid the issues mentioned with setting font sizes
+  // and spacing (margin/padding)
+  font-size: 50%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #212529;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  ul {
+    display: inline-block;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        // Primary color
+        color: $secondaryGreen;
+        &:hover {
+          text-decoration: none;
+          // Secondary color
+          color: $darkGreen;
+          // border-bottom: 2px solid $secondaryGreen;
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: 18px;
+      }
+    }
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+  &.text-white {
+    ul {
+      li {
+        a {
+          color: white;
+          font-weight: 600;
+          transition: 0.4s all;
+          &:hover {
+            color: $secondaryGreen;
+            transition: 0.4s all;
+            // border-bottom: 2px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "Knockout 54 A", "Knockout 54 B";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: "Knockout 54 A", "Knockout 54 B";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 34px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.phone-number {
+  padding-left: 10px;
+}
+
+.scroll-none {
+  overflow: hidden;
+}
+
+.page-header {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: $lightGrey;
+  h1 {
+    text-transform: uppercase;
+    color: $blue;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    span {
+      font-family: "Knockout 28 A", "Knockout 28 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+}
+
+.bullet {
+  padding-right: 8px;
+}
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .page-header {
+    h1 {
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+}

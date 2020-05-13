@@ -1,0 +1,152 @@
+.quiz {
+  background-color: $blue;
+  padding: 80px 0;
+  @media screen and (max-width: 992px) {
+    padding: 60px 0;
+  }
+
+  input {
+    background: transparent;
+    border: 0;
+    font-size: 140px;
+    width: 276px;
+    height: 212px;
+    color: white;
+    font-family: "Knockout 54 A", "Knockout 54 B";
+    font-style: normal;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    width: 192px;
+    height: 60px;
+    background-color: $secondaryGreen;
+    border: $secondaryGreen;
+    color: white;
+    border-radius: 4px;
+    font-family: "Knockout 54 A", "Knockout 54 B";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:nth-of-type(2) {
+      margin-left: 30px;
+    }
+  }
+
+  span {
+    color: $secondaryGreen;
+    text-transform: uppercase;
+    font-family: "Knockout 54 A", "Knockout 54 B";
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    bottom: -40px;
+    float: left;
+    cursor: pointer;
+    &:hover {
+      color: $darkGreen;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    padding-bottom: 154px;
+    padding-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+    &.q-one {
+      padding-bottom: 30px;
+      animation: fadeinleft 2s;
+    }
+
+    &.fade-right {
+      animation: fadeinright 2s;
+    }
+
+    &.fade-left {
+      animation: fadeinleft 2s;
+    }
+  }
+
+  .progress-bar {
+    width: 217px;
+    margin: auto;
+    .background {
+      background-color: $secondaryGreen;
+      border-radius: 10px;
+      height: 14px;
+      transition: width 0.5s ease;
+      img {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .copy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    @media screen and (max-width: 992px) {
+      padding-top: 30px;
+    }
+    h5 {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .quiz {
+    input {
+      background: transparent;
+      border: 0;
+      font-size: 120px;
+      width: 203px;
+    }
+
+    button {
+      width: 120px;
+      height: 50px;
+      text-transform: uppercase;
+
+      &:nth-of-type(2) {
+        margin-left: 15px;
+      }
+    }
+
+    a {
+      bottom: -32px;
+    }
+  }
+}
+
+@keyframes fadeinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeinright {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

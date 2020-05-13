@@ -1,0 +1,234 @@
+.homepage {
+  background-color: #b4e4f7;
+  .container {
+    padding-bottom: 70px;
+    background-image: url("../assets/images/home-hero.png");
+    background-size: 150%;
+    background-position: 35% 40%;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 425px) {
+      background-image: none;
+    }
+  }
+  h1 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
+    &:first-of-type {
+      padding-top: 50px;
+    }
+    &:last-of-type {
+      padding-bottom: 40px;
+    }
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  .btn-wrapper {
+    a {
+      margin: 0;
+    }
+  }
+}
+
+.btn-wrapper {
+  a {
+    background-color: $secondaryGreen;
+    color: white;
+    display: block;
+    width: 274px;
+    height: 50px;
+    padding: 19px;
+    border-radius: 4px;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: "Knockout 54 A", "Knockout 54 B";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.callout {
+  padding: 80px 0;
+  background-color: $blue;
+  color: white;
+  .btn-wrapper {
+    padding-top: 40px;
+    a {
+      width: 131px;
+    }
+  }
+}
+
+.how-treatment-works {
+  background-color: $lightGrey;
+  padding: 80px 0;
+  h1 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  h5 {
+    padding-top: 28px;
+  }
+  .steps {
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 10px 13px 0 rgba(81, 48, 125, 0.1);
+    .number {
+      position: relative;
+      margin: auto;
+      width: 55px;
+      height: 55px;
+      top: -72px;
+      border: 1px solid #eeeeef;
+      background-color: white;
+      border-radius: 50%;
+      font-size: 36px;
+      color: $blue;
+      font-family: "Knockout 28 A", "Knockout 28 B", "Calibri", "Arial Narrow",
+        sans-serif;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .section {
+      padding: 44px 30px;
+      &:not(:last-of-type) {
+        border-right: 1px solid #eeeeef;
+      }
+      p {
+        padding-top: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+  .btn-wrapper {
+    padding-top: 40px;
+    a {
+      width: 131px;
+      &.take-quiz {
+        width: 170px;
+        margin: 0;
+      }
+    }
+  }
+
+  .row {
+    &:nth-of-type(4) {
+      padding-top: 95px;
+      padding-bottom: 74px;
+    }
+  }
+
+  h2 {
+    color: $blue;
+    text-transform: uppercase;
+    font-family: "Knockout 28 A", "Knockout 28 B";
+    font-style: normal;
+    font-weight: 400;
+    strong {
+      font-family: "Knockout 54 A", "Knockout 54 B";
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  p {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    h1 {
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+
+  .callout {
+    padding: 60px 0;
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .how-treatment-works {
+    padding: 60px 0;
+    h1 {
+      font-size: 40px;
+      line-height: 38px;
+      &:last-of-type {
+        padding-bottom: 15px;
+      }
+    }
+    .steps {
+      &.row {
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .number {
+        top: -28px;
+      }
+      .section {
+        padding: 0 24px 30px 24px;
+        &:not(:last-of-type) {
+          border-right: none;
+          border-bottom: 1px solid #eeeeef;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+    .btn-wrapper {
+      a {
+        &.take-quiz {
+          margin: auto;
+        }
+      }
+    }
+    .row {
+      &:nth-of-type(4) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        img {
+          padding-bottom: 30px;
+        }
+      }
+      &:nth-of-type(5) {
+        img {
+          padding-bottom: 30px;
+        }
+      }
+    }
+    .got-questions {
+      padding-top: 60px;
+    }
+  }
+}
